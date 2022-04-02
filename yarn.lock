@@ -785,6 +785,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-lit@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "eslint-plugin-lit@npm:1.6.1"
+  dependencies:
+    parse5: ^6.0.1
+    parse5-htmlparser2-tree-adapter: ^6.0.1
+    requireindex: ^1.2.0
+  peerDependencies:
+    eslint: ">= 5"
+  checksum: 75e4dd2fb074cb600db1aee78196e201196bce21b8983c9bb64eea86c7d24f7013868bf5aa92f3c3f0087e232abf1ddb1954fd2d37d7ba4a897d4d085d9a14eb
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-wc@npm:^1.3.2":
+  version: 1.3.2
+  resolution: "eslint-plugin-wc@npm:1.3.2"
+  dependencies:
+    is-valid-element-name: ^1.0.0
+    js-levenshtein-esm: ^1.2.0
+  peerDependencies:
+    eslint: ">=5"
+  checksum: 0661d8b61abc3e29396de3b78cbaa71517dca769f6ad19d43db3055659667b941b2a4e7757865c71924ea5febb2fde7ee4ff6d0f7ba41587ff5136f60f661503
+  languageName: node
+  linkType: hard
+
 "eslint-scope@npm:^5.1.1":
   version: 5.1.1
   resolution: "eslint-scope@npm:5.1.1"
@@ -1307,10 +1332,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-potential-custom-element-name@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "is-potential-custom-element-name@npm:1.0.1"
+  checksum: ced7bbbb6433a5b684af581872afe0e1767e2d1146b2207ca0068a648fb5cab9d898495d1ac0583524faaf24ca98176a7d9876363097c2d14fee6dd324f3a1ab
+  languageName: node
+  linkType: hard
+
+"is-valid-element-name@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "is-valid-element-name@npm:1.0.0"
+  dependencies:
+    is-potential-custom-element-name: ^1.0.0
+  checksum: 915099b633770948b5967e6896f4475252634a2cc455ae1c158f48f6c11f03680e0bdaf0a547912ce6d3dea2cfa28a0e8013a98bb5e41445fc6ef0616824bea7
+  languageName: node
+  linkType: hard
+
 "isexe@npm:^2.0.0":
   version: 2.0.0
   resolution: "isexe@npm:2.0.0"
   checksum: 26bf6c5480dda5161c820c5b5c751ae1e766c587b1f951ea3fcfc973bafb7831ae5b54a31a69bd670220e42e99ec154475025a468eae58ea262f813fdc8d1c62
+  languageName: node
+  linkType: hard
+
+"js-levenshtein-esm@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "js-levenshtein-esm@npm:1.2.0"
+  checksum: 577c3e609d3f3b6ab46071638fee14f96a0a8a9148548d4da12d40cb1a12fd197a93d2ff1047a01562c892bad243e35431e015ab020535c9dead96da64a2c3dd
   languageName: node
   linkType: hard
 
@@ -1386,6 +1434,8 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.17.0
     "@typescript-eslint/parser": ^5.17.0
     eslint: ^8.12.0
+    eslint-plugin-lit: ^1.6.1
+    eslint-plugin-wc: ^1.3.2
     lit: ^2.0.2
     typescript: ^4.6.3
     vite: ^2.9.0
@@ -1665,6 +1715,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"parse5-htmlparser2-tree-adapter@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "parse5-htmlparser2-tree-adapter@npm:6.0.1"
+  dependencies:
+    parse5: ^6.0.1
+  checksum: 1848378b355d027915645c13f13f982e60502d201f53bc2067a508bf2dba4aac08219fc781dcd160167f5f50f0c73f58d20fa4fb3d90ee46762c20234fa90a6d
+  languageName: node
+  linkType: hard
+
+"parse5@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "parse5@npm:6.0.1"
+  checksum: 7d569a176c5460897f7c8f3377eff640d54132b9be51ae8a8fa4979af940830b2b0c296ce75e5bd8f4041520aadde13170dbdec44889975f906098ea0002f4bd
+  languageName: node
+  linkType: hard
+
 "path-is-absolute@npm:^1.0.0":
   version: 1.0.1
   resolution: "path-is-absolute@npm:1.0.1"
@@ -1771,6 +1837,13 @@ __metadata:
   version: 3.2.0
   resolution: "regexpp@npm:3.2.0"
   checksum: a78dc5c7158ad9ddcfe01aa9144f46e192ddbfa7b263895a70a5c6c73edd9ce85faf7c0430e59ac38839e1734e275b9c3de5c57ee3ab6edc0e0b1bdebefccef8
+  languageName: node
+  linkType: hard
+
+"requireindex@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "requireindex@npm:1.2.0"
+  checksum: 50d8b10a1ff1fdf6aea7a1870bc7bd238b0fb1917d8d7ca17fd03afc38a65dcd7a8a4eddd031f89128b5f0065833d5c92c4fef67f2c04e8624057fe626c9cf94
   languageName: node
   linkType: hard
 
