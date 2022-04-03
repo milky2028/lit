@@ -18,7 +18,8 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
+    "target": "es2019"
   },
   "include": [
     "src/**/*.ts"
