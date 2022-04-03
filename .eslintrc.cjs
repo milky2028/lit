@@ -67,7 +67,6 @@ module.exports = {
     "object-shorthand": "error",
     "no-unneeded-ternary": "error",
     "operator-assignment": "error",
-    "no-confusing-arrow": "error",
     "no-useless-computed-key": "error",
     "no-useless-rename": "error",
     "prefer-arrow-callback": "error",
