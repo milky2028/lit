@@ -3,10 +3,10 @@ import { customElement, property } from "lit/decorators.js";
 
 @customElement("adb-button")
 export class AdbButton extends LitElement {
-  @property({ reflect: true }) theme: "dark" | "light" = "dark";
+  @property({ type: Boolean, reflect: true }) dark = true;
 
   static styles = css`
-    :host([theme="light"]) {
+    :host([dark]) {
       --accent-color: white;
       --main-color: black;
     }
