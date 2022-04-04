@@ -32,6 +32,9 @@ export default class AdbSwitch extends LitElement {
       background-color: lightgrey;
       border-radius: 1.5rem;
       transition: background-color 100ms;
+      border: 0;
+      padding: 0;
+      appearance: none;
     }
 
     .marker {
@@ -45,7 +48,7 @@ export default class AdbSwitch extends LitElement {
       transition: transform 100ms;
     }
 
-    input:checked ~ .marker {
+    input:checked ~ .switch .marker {
       transform: translateX(1.5rem);
     }
 
@@ -71,9 +74,15 @@ export default class AdbSwitch extends LitElement {
     return html`
       <div role="switch" class="container">
         <label for=${this.#id}>${this.label}</label>
-        <input id=${this.#id} type="checkbox" .checked=${this.checked} @input=${this.#onChange} />
-        <div class="switch" @click=${this.#onSwitchClick}></div>
-        <div class="marker" @click=${this.#onSwitchClick}></div>
+        <input
+          id=${this.#id}
+          type="checkbox"
+          .checked=${this.checked}
+          @input=${this.#onChange}
+          tabindex=${-1} />
+        <button class="switch" @click=${this.#onSwitchClick}>
+          <div class="marker"></div>
+        </button>
       </div>
     `;
   }
