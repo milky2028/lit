@@ -1,7 +1,8 @@
 import { html, LitElement, css } from "lit";
-import { customElement, property  } from "lit/decorators.js";
+import { customElement, property } from "lit/decorators.js";
 
-const cancelPercentChanges = (newValue: number, oldValue: number) => newValue === 100 ? false : newValue !== oldValue;
+const cancelPercentChanges = (newValue: number, oldValue: number) =>
+  newValue === 100 ? false : newValue !== oldValue;
 
 @customElement("adb-progress")
 export class AdbProgress extends LitElement {
@@ -14,7 +15,7 @@ export class AdbProgress extends LitElement {
       width: 100%;
       transform: scaleX(0);
       transform-origin: left;
-      transition: transform 0.5s ease;
+      transition: transform 0.5s;
     }
   `;
 
